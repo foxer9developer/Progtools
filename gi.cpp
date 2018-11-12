@@ -106,7 +106,7 @@ while(node->next != NULL)
 int main() //main function to add two different polynomials
 { 
 	struct Node *poly1 = NULL, *poly2 = NULL, *poly = NULL; 
-	
+	int p;
 	
 	create_node(5,2,&poly1); 
 	create_node(4,1,&poly1); 
@@ -123,7 +123,7 @@ int main() //main function to add two different polynomials
 	show(poly2); 
 	
 	poly = (struct Node *)malloc(sizeof(struct Node)); 
-	
+	p = poly;
 	
 	polyadd(poly1, poly2, poly); 
 	
