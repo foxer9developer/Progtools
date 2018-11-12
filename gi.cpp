@@ -3,7 +3,7 @@
 using namespace std; 
 
 
-struct Node 
+struct Node //definition of the structure
 { 
 	int coeff; 
 	int pow; 
@@ -11,7 +11,7 @@ struct Node
 }; 
 			
  
-void create_node(int x, int y, struct Node **temp) 
+void create_node(int x, int y, struct Node **temp) //code for creation of the nodes
 { 
 	struct Node *r, *z; 
 	z = *temp; 
@@ -36,7 +36,7 @@ void create_node(int x, int y, struct Node **temp)
 } 
 
  
-void polyadd(struct Node *poly1, struct Node *poly2, struct Node *poly) 
+void polyadd(struct Node *poly1, struct Node *poly2, struct Node *poly) //performing addition 
 { 
 while(poly1->next && poly2->next) 
 	{ 
@@ -91,7 +91,7 @@ while(poly1->next || poly2->next)
 } 
 
 
-void show(struct Node *node) 
+void show(struct Node *node) // viewing the linked list
 { 
 while(node->next != NULL) 
 	{ 
@@ -103,7 +103,7 @@ while(node->next != NULL)
 } 
 
 
-int main() 
+int main() //main function
 { 
 	struct Node *poly1 = NULL, *poly2 = NULL, *poly = NULL; 
 	
