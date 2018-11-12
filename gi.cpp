@@ -103,7 +103,7 @@ while(node->next != NULL)
 } 
 
 
-int main() //main function
+int main() //main function to add two different polynomials
 { 
 	struct Node *poly1 = NULL, *poly2 = NULL, *poly = NULL; 
 	
