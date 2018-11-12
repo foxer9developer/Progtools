@@ -36,7 +36,7 @@ void create_node(int x, int y, struct Node **temp) //code for creation of the no
 } 
 
  
-void polyadd(struct Node *poly1, struct Node *poly2, struct Node *poly) //performing addition 
+void polyadd(struct Node *poly1, struct Node *poly2, struct Node *poly) //performing addition of two polynomials
 { 
 while(poly1->next && poly2->next) 
 	{ 
@@ -91,7 +91,7 @@ while(poly1->next || poly2->next)
 } 
 
 
-void show(struct Node *node) // viewing the linked list
+void show(struct Node *node) // viewing the linked lists
 { 
 while(node->next != NULL) 
 	{ 
